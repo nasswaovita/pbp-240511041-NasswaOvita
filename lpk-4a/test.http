@@ -1,0 +1,33 @@
+### 1. GET semua item
+GET http://localhost:3000/api/items
+
+###
+
+### 2. GET item berdasarkan ID
+GET http://localhost:3000/api/items/1
+
+###
+
+### 3. POST tambah item baru
+POST http://localhost:3000/api/items
+Content-Type: application/json
+
+{
+  "nama": "Keyboard",
+  "harga": 300000
+}
+
+###
+
+### 4. PUT update harga item
+PUT http://localhost:3000/api/items/1
+Content-Type: application/json
+
+{
+  "harga": 7500000
+}
+
+###
+
+### 5. DELETE hapus item
+DELETE http://localhost:3000/api/items/2
